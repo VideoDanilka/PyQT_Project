@@ -12,7 +12,7 @@ class Form(QMainWindow):
 
     def save(self):
         doc = DocxTemplate('MVP.docx')
-        context = {'name': 'Вася'}
+        context = {'имя': 'Вася'}
         doc.render(context)
         doc.save('MVP2.docx')
 
