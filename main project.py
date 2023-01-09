@@ -235,7 +235,11 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         a = self.comboBox.currentText()
         doc = DocxTemplate(f'templates/{a}')
         doc.render(context)
-        doc.save('templates/finished_form.docx')
+        if len(self.lineEdit_21.text()) == 0:
+            self.statusbar.showMessage('Введите название файла!!!!!')
+        else:
+            file_name = self.lineEdit_21.text()
+            doc.save(f'result/{file_name}')
 
     def clear(self):
         pointers.clear()
@@ -303,6 +307,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.lineEdit_18.setText('')
         self.lineEdit_19.setText('')
         self.lineEdit_20.setText('')
+        self.lineEdit_21.setText('')
 
 
 if __name__ == '__main__':
