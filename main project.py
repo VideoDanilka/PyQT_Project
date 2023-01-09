@@ -28,6 +28,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
                 a = (paragraph.text[paragraph.text.find('{') + 2: paragraph.text.find('}')])
                 if a not in pointers:
                     pointers.append(a)
+
         if len(pointers) >= 1:
             self.label.setText(pointers[0])
             self.label.update()
@@ -87,51 +88,61 @@ class MyWidget(QMainWindow, Ui_MainWindow):
             self.label_10.update()
             self.label_10.show()
             self.lineEdit_10.show()
+
         if len(pointers) >= 11:
             self.label_11.setText(pointers[10])
             self.label_11.update()
             self.label_11.show()
             self.lineEdit_11.show()
+
         if len(pointers) >= 12:
             self.label_12.setText(pointers[11])
             self.label_12.update()
             self.label_12.show()
             self.lineEdit_12.show()
+
         if len(pointers) >= 13:
             self.label_13.setText(pointers[12])
             self.label_13.update()
             self.label_13.show()
             self.lineEdit_13.show()
+
         if len(pointers) >= 14:
             self.label_14.setText(pointers[13])
             self.label_14.update()
             self.label_14.show()
             self.lineEdit_14.show()
+
         if len(pointers) >= 15:
             self.label_15.setText(pointers[14])
             self.label_15.update()
             self.label_15.show()
             self.lineEdit_15.show()
+
         if len(pointers) >= 16:
             self.label_16.setText(pointers[15])
             self.label_16.update()
             self.label_16.show()
             self.lineEdit_16.show()
+
         if len(pointers) >= 17:
             self.label_17.setText(pointers[16])
             self.label_17.update()
             self.label_17.show()
             self.lineEdit_17.show()
+
         if len(pointers) >= 18:
             self.label_18.setText(pointers[17])
             self.label_18.update()
             self.label_18.show()
             self.lineEdit_18.show()
+
         if len(pointers) >= 19:
-            self.label_18setText(pointers[18])
-            self.label_18.update()
-            self.label_18.show()
-            self.lineEdit_18.show()
+            self.label_19.setText(pointers[18])
+            self.label_19.update()
+            self.label_19.show()
+            self.lineEdit_19.show()
+
         if len(pointers) >= 20:
             self.label_20.setText(pointers[19])
             self.label_20.update()
@@ -250,6 +261,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.label_18.hide()
         self.label_19.hide()
         self.label_20.hide()
+
         self.lineEdit.hide()
         self.lineEdit_2.hide()
         self.lineEdit_3.hide()
@@ -270,6 +282,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.lineEdit_18.hide()
         self.lineEdit_19.hide()
         self.lineEdit_20.hide()
+
         self.lineEdit.setText('')
         self.lineEdit_2.setText('')
         self.lineEdit_3.setText('')

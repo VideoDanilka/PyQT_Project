@@ -1,5 +1,4 @@
 PyQt5
 docxtpl
 docx
-sys
-os
+
